@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+
+    <!-- this is the example of external css -->
+    <!-- The latest modifed external or iternal css take more priority means which css writen latest takes highest priority -->
+    <link rel="stylesheet" href="tut13.css">
+
+    <!-- This is the example of Internal Css  -->
+    <style>
+        p{
+            /* this will not work because you give color red in the inline css and inline css hase more priority */
+            color: blue;
+            /* after modifing latest css but you want to take background of od css give !important in the last */
+            background-color: seagreen !important; 
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h3>This is Css Tutorial</h3>
+    <!-- below is an example of inline example -->
+    <!-- <p style="color: red; background-color: yellow;">This tutorial will teach you everything you need to know about HTML/CSS</p> -->
+
+    <p>This tutorial will teach you everything you need to know about HTML/CSS</p>
+    
+</body>
+</html>

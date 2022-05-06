@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            display: inline-block;
+            border: 2px solid red;
+            height: 150px;
+            width: 150px;
+            margin: 3px;
+
+        }
+        #box3{
+            /* Types of position - static(by default), absolute, relative, fixed, sticky */
+            /* relative: relative to its normal position means you can move it to left,right.top.bottom
+            but it gives gap in its original position */
+
+            /* absolute: relative to its parent(.container is the parent) position means you can move it to left,right.top.bottom by overlaping the outer box */
+            /* position: absolute; */ 
+            /* top: 34px;
+            left: 34px; */
+
+            /* position fixed: position relative to the browser window */
+            /* position: fixed;
+            right: 4px;
+            bottom: 1px; */
+
+            position: sticky;
+            top: 3px;
+        }
+        .container{
+            border: 2px solid black;
+            height: 3444px;
+            background-color: khaki;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">Chat With Us</div>
+        <div class="box" id="box4">4</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <Style>
+        /* this is universal, it apply on all the elements */
+        *{
+            /* this means if we increase the padding it does not affect on width */
+            box-sizing: border-box;
+
+            /* to reset padding margin */
+            /* margin: 0;
+            width: 0; */
+        }
+        body{
+            /* this is for page background color */
+            background-color: aquamarine;
+        }
+        .container {
+
+            /* This is for content */
+            background-color: rgb(6, 244, 101);
+            border: 3px solid red;
+
+            /* this is for padding (spacing inside the border) */
+            /* we can set same padding for all directions  */
+
+            /* padding: 7px; */
+
+            /* we can set padding individual for top, bottom, left, right */
+            /* padding-top: 14px;
+            padding-bottom: 14px;
+            padding-left: 4px;
+            padding-right: 4px; */
+
+            /* padding in short hand */
+            /* padding: 23px 56px 6px 78px ;*/ /*padding: top right bottom left */
+
+            /* I yo want same for top bottom and same for left right */
+            padding: px 20px; /* padding y(top/bottom) x(eft/right);*/
+
+            /* this is for margin (spacing outside the border) */
+            margin: 18px 19px;
+
+            /* we can set margin individual for top, bottom, left, right */
+            /* margin-top: 20px;
+            margin-bottom: 13px;
+            margin-left: 4px;
+            margin-right: 6px; */
+
+
+            /* this is for border curves */
+            border-radius: 23px;
+
+            width: 553px;
+
+
+        }
+    </Style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nobis eos id accusamus, quam
+            veritatis nemo eaque neque, consequuntur asperiores voluptatem vero et, illo fuga porro aliquid temporibus
+            dolore! Maiores.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nobis eos id accusamus, quam
+            veritatis nemo eaque neque, consequuntur asperiores voluptatem vero et, illo fuga porro aliquid temporibus
+            dolore! Maiores.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nobis eos id accusamus, quam
+            veritatis nemo eaque neque, consequuntur asperiores voluptatem vero et, illo fuga porro aliquid temporibus
+            dolore! Maiores.</p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* this below one is called element selector */
+        /* this below code use to red the whole paragraphs whose selevtor is p*/
+        p{
+            
+            color: red;
+            border: 2px solid green;
+        }
+
+        /* this below code selevt only thode whose id or class are mentioned */
+        /* id is unique for all emenets,
+        we can use same class in multiple elements or multiple class in one element by giving space between them */
+
+        /* #Id selector */
+        /* #symbol is used for id */
+        #osm{
+            color: orange;
+            background: red;
+        }
+
+        /* .class selector */
+        /* (.) is used for class */
+        .bgBlack{
+            color: yellow;
+            background: blue;
+        }
+        /* combined grouping selector */
+        footer,span{
+            background-color: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>SELECTORS</h3>
+    <p id="osm">This is a simple paragraph to demonstrate css selectors</p>
+    <p id="secondPara" class="redElement bgBlack">This is a another simple paragraph to demonstrate css selectors</p>
+    <div>
+        <p>This is yet another simple paragraph inside div to demonstrate css selectors</p>
+        <span>This is span</span>
+    </div>
+    <footer>This is footer</footer>
+    
+</body>
+</html>

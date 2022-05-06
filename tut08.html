@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>This is HTML forms tutorial</h2>
+
+    <!-- here action means store the form data in the backend database -->
+    <form action="backend.php">
+
+        <div>
+            <!-- input tag is a spanic inline element so to use input in one after one line use div tag -->
+            <!-- div is a block element it gives the element in seperate line -->
+            <!-- here lable is used if you click on name in the form i automatically get the name box -->
+            <label for="name"> NAME: </label>
+            <input type="text" name="myName" id="name">
+            <!-- here div uses 1 block of width so employee id print in next line  -->
+        </div>
+        <br>
+        <div>
+            <label for="EmployeeId"> EMPLOYEE ID: </label>
+            <!-- here input is used to take input from the user in the form  -->
+            <input type="text" name="myEmployeeId" id="EmployeeId">
+        </div>
+        <!-- br is not recommended we learn in next lessons -->
+        <br>
+        <div>
+            <label for="rollNo"> Roll: </label>
+            <input type="text" name="myROll" id="rollNo">
+        </div>
+        <br>
+        <div>
+            <label for="email"> EMAIL: </label>
+            <input type="email" name="myEmail" id="email">
+        </div>
+        <br>
+        <div>
+            <label for="date"> Date: </label>
+            <input type="date" name="myDate" id="date">
+        </div>
+        <br>
+        <div>
+            <label for="eligibility"> Are you elegible for bonus?: </label>
+            <!-- if you type checked in the last so the checkbox is by default checked -->
+            <input type="checkbox" name="myElegibility" id="eligibility" checked>
+        </div>
+        <br>
+        <div>
+            <label for="bonus"> Bonus: </label>
+            <input type="number" name="myBonus" id="bonus">
+        </div>
+        <br>
+        <div>
+            <!-- if you give the same name in the checkbox then you will able to select only one -->
+            <label for=""> GENDER: </label>
+            <label for="male"> Male </label>
+            <input type="radio" name="myGender" id="male">
+            <label for="female"> Female</label>
+            <input type="radio" name="myGender" id="female">
+            <label for="others"> Other</label>
+            <input type="radio" name="myGender" id="others">
+
+        </div>
+        <br>
+        <div>
+            <label for="car">Availsble Cars for you: </label>
+            <select name="myCars" id="car">
+                <option value="ind"> INDICA</option>
+                <!-- here selected is used for by default selected, if  you remove selected then it will normal list -->
+                <option value="swf" selected> SWIFT</option>
+                <option value="vol"> VOLVO</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <strong><em>Write abot yourself:</em></strong> <br> <textarea name="myText" cols="90" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Submit Now ">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+
+</body>
+
+</html>

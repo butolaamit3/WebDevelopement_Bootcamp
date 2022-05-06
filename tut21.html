@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=Ubuntu+Mono:ital@1&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+
+        }
+
+        body {
+            font-family: 'Ubuntu Mono', monospace;
+        }
+
+        .container {
+            background-color: rgb(250, 223, 198);
+            border: 3px dotted grey;
+            width: 900px;
+            /* to center a container there is a auto property */
+            /* margin: auto */
+
+            /* If you want to git different property for sides  */
+            /* margin 33px(y) auto in x*/
+            margin: 33px auto;
+
+        }
+
+        .items {
+            border: 3px dotted red;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: rgb(230, 216, 216);
+            border-radius: 14px;
+
+        }
+
+        #fruits {
+            float: left;
+            width: 48%;
+
+        }
+
+        #computer {
+            float: right;
+            width: 48%;
+
+        }
+
+        #stationary {
+            /* float:left; */
+
+            /* no left element will not overlap */
+            /* clear: left; */
+
+            /* nor left right will not overlap */
+            clear: both;
+
+            width: 100%;
+
+        }
+
+        p, h3 {
+            /* to allign the text  */
+            /* text-align: left;
+            text-align: right;
+            text-align: center; */
+            text-align: justify;
+        }
+
+        h1 {
+            margin: 23px auto;
+            width: 331px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <!-- short hand use for brloe line ( #fruits.items) -->
+        <div id="fruits" class="items">
+            <h3>Fruits</h3>
+            <!-- sortcut for below code (p#fruitspara.para) -->
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem,
+                quo? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem quaerat inventore optio dolore
+                eius? Ex voluptates rem cupiditate pariatur accusamus!</p>
+        </div>
+
+        <div id="computer" class="items">
+            <h3>Computer</h3>
+            <!-- sortcut for below code (p#fruitspara.para) -->
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, cum?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur voluptatum recusandae obcaecati
+                nulla cum eius maiores aliquam quod soluta sint. Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit. Iusto, debitis. </p>
+        </div>
+
+        <div id="stationary" class="items">
+            <h3>Stationary</h3>
+            <!-- sortcut for below code (p#fruitspara.para) -->
+            <p id="stationaryespara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, maxime.
+            </p>
+        </div>
+
+        <div id=glasses" class="items">
+            <h3>glasses</h3>
+            <!-- sortcut for below code (p#fruitspara.para) -->
+            <p id=glassesespara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, maxime.
+            </p>
+        </div>
+    </div>
+
+    <stationaries </html>

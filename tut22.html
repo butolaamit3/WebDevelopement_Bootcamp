@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selector and more designing</title>
+    <style>
+        .container{
+            border: 2px dotted rgb(2, 2, 234);
+            background-color: rgb(225, 147, 147);
+            padding: 34px;
+            margin: 34px auto;
+            width: 666px;
+
+        }
+        .btn{
+            background-color: rgb(10, 239, 239);
+            padding: 6px;
+            border: none;
+            cursor: pointer; /*This is for to make pointer to cursor whenever you take cursor into that button*/
+            font-style: italic;
+            font-weight: bold;
+            font-size: 12px;
+            border-radius: 3px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{/*Sudo selectors*/
+            color: rgb(0, 0, 0); /* when you take the cursor over the button change the color of button to black*/
+            background-color: rgb(19, 227, 227);
+
+        }
+        a:visited{ /*now a is the visited link whenever you visit the link is changed color for the       next time and color change*/
+            background-color: rgb(255, 237, 37);
+
+        }
+        a:active{/*when you click on the a active button colore change*/
+            background-color: brown;
+        }
+        .btn:hover{
+            color: rgb(0, 0, 0); /* when you take the cursor over the button change the color of button to black*/
+            background-color: rgb(19,227,227);
+            border: 1px solid black;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A reiciendis repellendus libero molestiae assumenda consequatur inventore rerum, est molestias numquam.
+        </p>
+        <a href="https://instagram.com" class="btn">Read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+
+</body>
+</html

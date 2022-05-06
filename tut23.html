@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        .navbar{
+            background-color: rgb(0, 0, 0);
+            border-radius: 20px;
+        }
+        .navbar li{ /*to float the list in the right*/
+            float: left;
+            list-style: none;
+            margin: 19px 20px;
+             
+        }
+        .navbar ul{ /*to get the background color because it is i=hidden due to overflow of parent li*/
+            overflow: auto;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .navbar li a{
+            padding: 3px 8px;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+        .navbar li a:hover{
+            color: rgb(223, 209, 209);
+        }
+        .search{
+            float: right;
+            color: white;
+            padding: 12px 22px;
+
+            
+        }
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 10px ;
+            padding: 3px 17px;
+            margin: 4px 4px;
+            width: 168px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="search"> <input type="search" name="search" id="search" placeholder="Enter the keyword"> </div>
+            </ul>
+        </nav>
+    </header>
+    
+</body>
+</html>
